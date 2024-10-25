@@ -302,27 +302,7 @@ default_loras = get_config_item_or_set_default(
     key='default_loras',
     default_value=[
         [
-            True,
-            "None",
-            1.0
-        ],
-        [
-            True,
-            "None",
-            1.0
-        ],
-        [
-            True,
-            "None",
-            1.0
-        ],
-        [
-            True,
-            "None",
-            1.0
-        ],
-        [
-            True,
+            False,
             "None",
             1.0
         ]
@@ -373,9 +353,7 @@ default_vae = get_config_item_or_set_default(
 default_styles = get_config_item_or_set_default(
     key='default_styles',
     default_value=[
-        "Fooocus V2",
-        "Fooocus Enhance",
-        "Fooocus Sharp"
+        ""
     ],
     validator=lambda x: isinstance(x, list) and all(y in modules.sdxl_styles.legal_style_names for y in x),
     expected_type=list
@@ -655,7 +633,7 @@ def downloading_inpaint_models(v):
 
 def downloading_sdxl_lcm_lora():
     load_file_from_url(
-        url='https://huggingface.co/lllyasviel/misc/resolve/main/sdxl_lcm_lora.safetensors',
+        url='',
         model_dir=paths_loras[0],
         file_name=modules.flags.PerformanceLoRA.EXTREME_SPEED.value
     )
@@ -664,7 +642,7 @@ def downloading_sdxl_lcm_lora():
 
 def downloading_sdxl_lightning_lora():
     load_file_from_url(
-        url='https://huggingface.co/mashb1t/misc/resolve/main/sdxl_lightning_4step_lora.safetensors',
+        url='',
         model_dir=paths_loras[0],
         file_name=modules.flags.PerformanceLoRA.LIGHTNING.value
     )
@@ -673,7 +651,7 @@ def downloading_sdxl_lightning_lora():
 
 def downloading_sdxl_hyper_sd_lora():
     load_file_from_url(
-        url='https://huggingface.co/mashb1t/misc/resolve/main/sdxl_hyper_sd_4step_lora.safetensors',
+        url='',
         model_dir=paths_loras[0],
         file_name=modules.flags.PerformanceLoRA.HYPER_SD.value
     )
@@ -682,11 +660,11 @@ def downloading_sdxl_hyper_sd_lora():
 
 def downloading_controlnet_canny():
     load_file_from_url(
-        url='https://huggingface.co/lllyasviel/misc/resolve/main/control-lora-canny-rank128.safetensors',
+        url='',
         model_dir=path_controlnet,
-        file_name='control-lora-canny-rank128.safetensors'
+        file_name=''
     )
-    return os.path.join(path_controlnet, 'control-lora-canny-rank128.safetensors')
+    return os.path.join(path_controlnet, '')
 
 
 def downloading_controlnet_cpds():
