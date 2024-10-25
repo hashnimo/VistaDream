@@ -4,18 +4,18 @@
 # Copyright (C) 2024 Apple Inc. All Rights Reserved.
 #
 # Fooocus basic model
-wget -P tools/Fooocus/models/checkpoints/ https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/juggernautXL_v8Rundiffusion.safetensors 
+wget -P tools/Fooocus/models/checkpoints/ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors 
 # Fooocus lora model
 wget -P tools/Fooocus/models/loras/ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors 
 # Fooocus inpaint model
-wget -P tools/Fooocus/models/inpaint/ https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint_v26.fooocus.patch?download=true
-mv tools/Fooocus/models/inpaint/inpaint_v26.fooocus.patch?download=true tools/Fooocus/models/inpaint/inpaint_v26.fooocus.patch
+wget -P tools/Fooocus/models/inpaint/ https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint_v26.fooocus.patch
+#mv tools/Fooocus/models/inpaint/inpaint_v26.fooocus.patch tools/Fooocus/models/inpaint/inpaint_v26.fooocus.patch
 # Fooocus Prompt-Extension
-wget -P tools/Fooocus/models/prompt_expansion/fooocus_expansion/ https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_expansion.bin?download=true
-mv tools/Fooocus/models/prompt_expansion/fooocus_expansion/fooocus_expansion.bin?download=true tools/Fooocus/models/prompt_expansion/fooocus_expansion/pytorch_model.bin
+wget -P tools/Fooocus/models/prompt_expansion/fooocus_expansion/ https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_expansion.bin
+mv tools/Fooocus/models/prompt_expansion/fooocus_expansion/fooocus_expansion.bin tools/Fooocus/models/prompt_expansion/fooocus_expansion/pytorch_model.bin
 # Foooocus Upscale
-wget -P tools/Fooocus/models/unscale_models/ https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_upscaler_s409985e5.bin?download=true
-mv tools/Fooocus/models/unscale_models/fooocus_upscaler_s409985e5.bin?download=true tools/Fooocus/models/unscale_models/fooocus_upscaler_s409985e5.bin
+wget -P tools/Fooocus/models/unscale_models/ https://huggingface.co/lllyasviel/misc/resolve/main/fooocus_upscaler_s409985e5.bin
+mv tools/Fooocus/models/unscale_models/fooocus_upscaler_s409985e5.bin tools/Fooocus/models/unscale_models/fooocus_upscaler_s409985e5.bin
 
 # Depth Pro
 wget -P tools/DepthPro/checkpoints https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt 
