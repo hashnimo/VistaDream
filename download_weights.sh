@@ -6,7 +6,7 @@
 # Fooocus basic model
 wget -P tools/Fooocus/models/checkpoints/ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors 
 # Fooocus lora model
-wget -P tools/Fooocus/models/loras/ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors 
+#wget -P tools/Fooocus/models/loras/ https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_offset_example-lora_1.0.safetensors 
 # Fooocus inpaint model
 wget -P tools/Fooocus/models/inpaint/ https://huggingface.co/lllyasviel/fooocus_inpaint/resolve/main/inpaint_v26.fooocus.patch
 #mv tools/Fooocus/models/inpaint/inpaint_v26.fooocus.patch tools/Fooocus/models/inpaint/inpaint_v26.fooocus.patch
@@ -24,4 +24,4 @@ wget -P tools/OneFormer/checkpoints https://shi-labs.com/projects/oneformer/ade2
 
 # stable diffusion - lcm
 # original SD1.5 ckpt will be automatically downloaded from https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
-wget -P tools/StableDiffusion/lcm_ckpt https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/resolve/main/pytorch_lora_weights.safetensors
+#wget -P tools/StableDiffusion/lcm_ckpt https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/resolve/main/pytorch_lora_weights.safetensors
