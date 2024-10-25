@@ -35,6 +35,12 @@ args_parser.parser.add_argument("--always-download-new-model", action='store_tru
                                 help="Always download newer models ", default=False)
 
 args_parser.parser.set_defaults(
+    all_in_fp16=True,
+    disable_offload_from_vram=True,
+    disable_async_cuda_allocation=True,
+    unet_in_fp8_e4m3fn=True,
+    vae_in_fp16=True,
+    clip_in_fp8_e4m3fn=True,
     disable_cuda_malloc=True,
     in_browser=True,
     port=None
